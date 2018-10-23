@@ -1,0 +1,80 @@
+{
+    "result": true,
+    "value": [
+        {
+            "id": 1,
+            "status": "shipped",
+            "orderDate": "2017-05-16 10:01:23",
+            "billingAddressId": 1,
+            "shippingAddressId": 1,
+            "currency": "US-$",
+            "items": [
+                {
+                    "productId": "0394718747",
+                    "quantity": 2,
+                    "unitPrice": 4.80
+                },
+                {
+                    "productId": "0889610356",
+                    "quantity": 1,
+                    "unitPrice": 19.90
+                }
+            ],
+            "payments": [
+                {
+                    "date": "2017-05-17",
+                    "method": "bankpayment",
+                    "amount": 19.90
+                }
+            ],
+            "shipments": [
+                {
+                    "provider": "CompanyA",
+                    "shipDate": "2017-05-18"
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "status": "processing",
+            "billingAddressId": 2,
+            "shippingAddressId": 3,
+            "orderDate": "2017-05-02 02:21:03",
+            "currency": "€",
+            "items": [
+                {
+                    "productId": "1859847390",
+                    "quantity": 1,
+                    "unitPrice": 2.40
+                },
+                {
+                    "productId": "0889610356",
+                    "quantity": 2,
+                    "unitPrice": 19.80
+                }
+            ],
+            "payments": [
+                {
+                    "date": "2017-05-02",
+                    "method": "creditcard",
+                    "amount": 2.40
+                },
+                {
+                    "date": "2017-05-05",
+                    "method": "paymentservice",
+                    "amount": 19.80
+                }
+            ],
+            "shipments": [
+                {
+                    "provider": "CompanyA",
+                    "shipDate": "2017-05-03"
+                },
+                {
+                    "provider": "CompanyB",
+                    "shipDate": "2017-05-06"
+                }
+            ]
+        }
+    ]
+}

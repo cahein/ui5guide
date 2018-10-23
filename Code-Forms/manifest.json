@@ -1,0 +1,111 @@
+{
+    "start_url": "index.html",
+    "sap.app": {
+        "id": "openui5manual",
+        "type": "application",
+        "title": "{{openui5manual.title}}",
+        "applicationVersion": {
+            "version": "0.1"
+        }
+    },
+    "sap.ui": {
+	"deviceTypes": {
+	    "desktop": true,
+	    "tablet": true,
+	    "phone": true
+	},
+        "supportedThemes": [
+            "sap_belize"
+        ]
+    },
+    "sap.ui5": {
+        "handleValidation": true,
+        "contentDensities": {
+            "compact": true,
+            "cozy": true
+        },
+        "dependencies": {
+            "libs": {
+                "sap.m": { "min-version": "1.44" },
+                "sap.ui.layout": { "min-version": "1.44" }
+            },
+            "components" : {
+            }
+        },
+        "routing" : {
+            "config" : {
+                "routerClass": "oum.Router",
+                "async": true,
+                "viewType": "JS",
+                "viewPath": "oum.view",
+                "controlId": "oumApp",
+                "controlAggregation": "pages",
+                "bypassed": {
+                    "target": "noRoute"
+                }
+            },
+            "routes": [
+                {
+                    "pattern": "",
+                    "name": "home",
+                    "target": "home"
+                },
+                {
+                    "pattern": "exampleForm",
+                    "name": "formExample",
+                    "target": "formExample"
+                },
+                {
+                    "pattern": "exampleSimpleForm",
+                    "name": "simpleFormExample",
+                    "target": "simpleFormExample"
+                },
+                {
+                    "pattern": "help",
+                    "name": "help",
+                    "target": ["helpIndex", "helpIntro"]
+                },
+                {
+                    "pattern": "pageNotFound",
+                    "name": "noRoute",
+                    "target": "noRoute"
+                }
+            ],
+            "targets": {
+                "app": {
+                    "viewName": "app",
+                    "viewType": "XML"
+                },
+                "home": {
+                    "viewName": "entry"
+                },
+                "simpleFormExample": {
+                    "viewName": "simpleFormExample"
+                },
+                "formExample": {
+                    "viewName": "formExample"
+                },
+                "splitApp": {
+                    "viewName": "splitApp",
+                    "viewType": "XML"
+                },
+                "helpIndex": {
+                    "parent": "splitApp",
+                    "viewName": "help.index",
+                    "controlId": "oumSplitApp",
+                    "controlAggregation": "masterPages"
+                },
+                "helpIntro": {
+                    "parent": "splitApp",
+                    "viewName": "help.intro",
+                    "controlId": "oumSplitApp",
+                    "controlAggregation": "detailPages"
+                },
+                "noRoute": {
+                    "viewName": "noRoute",
+                    "viewType": "XML"
+                }
+            }
+        }
+    }
+}

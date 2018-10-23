@@ -1,0 +1,29 @@
+{
+   "componentId": "oumComponent",
+   "availableLanguages": [ "en", "de" ],
+   "defaultLanguage": "en",
+   "logLevel": "DEBUG",
+   "entryPoints": [
+      {
+         "header" : "Form Example",
+         "footer" : "Form",
+         "tooltip" : "",
+         "icon" : "sap-icon://form",
+         "routeName" : "formExample"
+      },
+      {
+         "header" : "SimpleForm Example",
+         "footer" : "SimpleForm",
+         "tooltip" : "",
+         "icon" : "sap-icon://form",
+         "routeName" : "simpleFormExample"
+      },
+      {
+         "header" : "{i18n>tiles.help.header}",
+         "footer" : "{i18n>tiles.help.footer}",
+         "tooltip" : "{i18n>help.tooltip}",
+         "icon" : "sap-icon://sys-help",
+         "routeName" : "help"
+      }
+   ]
+}

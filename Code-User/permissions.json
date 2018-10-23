@@ -1,0 +1,14 @@
+{
+   "views": {
+      "oum.view.entry": {
+         "roles": [
+            "user"
+         ]
+      },
+      "oum.view.help.intro": {
+         "roles": [
+            "noone"
+         ]
+      }
+   }
+}

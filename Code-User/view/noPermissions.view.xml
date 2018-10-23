@@ -1,0 +1,6 @@
+<View xmlns="sap.m">
+  <MessagePage
+      title="Not Authorized"
+      text="This page is not available."
+      description="You do not have the required permissions to access the requested page."/>
+</View>

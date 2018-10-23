@@ -1,0 +1,187 @@
+{
+   "start_url": "index.html",
+   "sap.app": {
+      "id": "ui5manual",
+      "type": "application",
+      "title": "{{ui5manual.title}}",
+      "applicationVersion": {
+         "version": "0.1"
+      }
+   },
+   "sap.ui": {
+      "deviceTypes": {
+	 "desktop": true,
+	 "tablet": true,
+	 "phone": false
+      },
+      "supportedThemes": [
+         "sap_belize",
+         "sap_hcb"
+      ]
+   },
+   "sap.ui5": {
+      "contentDensities": {
+         "compact": true,
+         "cozy": true
+      },
+      "dependencies": {
+         "libs": {
+         },
+         "components" : {
+         }
+      },
+      "routing" : {
+         "config" : {
+            "routerClass": "oum.Router",
+            "async": true,
+            "viewType": "JS",
+            "viewPath": "oum.view",
+            "controlId": "oumApp",
+            "controlAggregation": "pages",
+            "bypassed": {
+               "target": "noRoute"
+            }
+         },
+         "routes": [
+            {
+               "pattern": "",
+               "name": "home",
+               "isHome": true,
+               "target": "home"
+            },
+            {
+               "pattern": "help",
+               "name": "help",
+               "target": ["helpIndex", "helpIntro"]
+            },
+            {
+               "pattern": "address/:id:",
+               "name": "address",
+               "target": "addressForm"
+            },
+            {
+               "pattern": "history",
+               "name": "history",
+               "target": "history"
+            },
+            {
+               "pattern": "splitAppExample",
+               "name": "split",
+               "target": ["exampleMaster1", "exampleDetail1"]
+            },
+            {
+               "pattern": "exampleDetail1",
+               "name": "exampleDetail1",
+               "target": "exampleDetail1"
+            },
+            {
+               "pattern": "exampleDetail2",
+               "name": "exampleDetail2",
+               "target": "exampleDetail2"
+            },
+            {
+               "pattern": "order/:id:",
+               "name": "order",
+               "target" : "orderEdit"
+            },
+            {
+               "pattern": "order/{id}/products",
+               "name": "orderProducts",
+               "target" : "orderEdit"
+            },
+            {
+               "pattern": "order/{id}/address/{type}",
+               "name": "orderAddress",
+               "target" : "orderEdit"
+            },
+            {
+               "pattern": "order/{id}/addresses:?params:",
+               "name": "orderAddresses",
+               "target" : "orderEdit"
+            },
+            {
+               "pattern": "pageNotFound",
+               "name": "noRoute",
+               "target": "noRoute"
+            }
+         ],
+         "targets": {
+            "app": {
+               "viewName": "app",
+               "viewType": "XML"
+            },
+            "splitApp": {
+               "viewName": "splitApp",
+               "viewType": "XML"
+            },
+            "layout": {
+               "viewName": "layout"
+            },
+            "home": {
+               "viewName": "entry",
+               "title": "{i18n>ui5manual.title}"
+            },
+            "helpIndex": {
+               "parent": "splitApp",
+               "viewName": "help.index",
+               "title": "{i18n>view.help.index.title}",
+               "controlId": "oumSplitApp",
+               "controlAggregation": "masterPages"
+            },
+            "helpIntro": {
+               "parent": "splitApp",
+               "viewName": "help.intro",
+               "title": "{i18n>view.help.intro.title}",
+               "controlId": "oumSplitApp",
+               "controlAggregation": "detailPages"
+            },
+            "addressForm": {
+               "parent": "layout",
+               "viewName": "address",
+               "controlId": "oumLayout",
+               "controlAggregation": "content"
+            },
+            "history": {
+               "viewName": "history",
+               "title": "View History"
+            },
+            "orderEdit": {
+               "viewName": "order",
+               "title": "View/Edit Order"
+            },
+            "exampleMaster1": {
+               "parent": "splitApp",
+               "controlId": "oumSplitApp",
+               "controlAggregation": "masterPages",
+               "viewName": "exampleMaster",
+               "title": "Example Master View 1"
+            },
+            "exampleMaster2": {
+               "parent": "splitApp",
+               "controlId": "oumSplitApp",
+               "controlAggregation": "masterPages",
+               "viewName": "exampleMaster2",
+               "title": "Example Master View 2"
+            },
+            "exampleDetail1": {
+               "parent": "splitApp",
+               "controlId": "oumSplitApp",
+               "controlAggregation": "detailPages",
+               "viewName": "exampleDetail",
+               "title": "Example Detail View 1"
+            },
+            "exampleDetail2": {
+               "parent": "splitApp",
+               "controlId": "oumSplitApp",
+               "controlAggregation": "detailPages",
+               "viewName": "exampleDetail2",
+               "title": "Example Detail View 2"
+            },
+            "noRoute": {
+               "viewName": "noRoute",
+               "viewType": "XML"
+            }
+         }
+      }
+   }
+}

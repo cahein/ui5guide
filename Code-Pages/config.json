@@ -1,0 +1,56 @@
+{
+   "componentId": "oumComponent",
+   "availableLanguages": [ "en", "de" ],
+   "defaultLanguage": "en",
+   "logLevel": "DEBUG",
+   "entryPoints": [
+      {
+         "header" : "Mobile Page Example",
+         "footer" : "Page",
+         "tooltip" : "",
+         "icon" : "sap-icon://example",
+         "iconText" : "example",
+         "routeName" : "mPage"
+      },
+      {
+         "header" : "Dynamic Page Example",
+         "footer" : "DynamicPage",
+         "tooltip" : "",
+         "icon" : "sap-icon://example",
+         "iconText" : "example",
+         "routeName" : "dynamicPage"
+      },
+      {
+         "header" : "Semantic Page Example",
+         "footer" : "SemanticPage",
+         "tooltip" : "",
+         "icon" : "sap-icon://example",
+         "iconText" : "example",
+         "routeName" : "semanticPage"
+      },
+      {
+         "header" : "Tool Page Example",
+         "footer" : "ToolPage",
+         "tooltip" : "",
+         "icon" : "sap-icon://example",
+         "iconText" : "example",
+         "routeName" : "toolPage"
+      },
+      {
+         "header" : "Object Page Example",
+         "footer" : "ObjectPage",
+         "tooltip" : "",
+         "icon" : "sap-icon://example",
+         "iconText" : "example",
+         "routeName" : "objectPage"
+      },
+      {
+         "header" : "{i18n>tiles.help.header}",
+         "footer" : "{i18n>tiles.help.footer}",
+         "tooltip" : "{i18n>help.tooltip}",
+         "icon" : "sap-icon://sys-help",
+         "iconText" : "help",
+         "routeName" : "help"
+      }
+   ]
+}

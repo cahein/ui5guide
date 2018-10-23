@@ -1,0 +1,11 @@
+<View xmlns="sap.m"
+      controllerName="oum.controller.root"
+      displayBlock="true">
+  <SplitApp id="oumSplitApp"
+            detailNavigate="onNavigate"
+            masterNavigate="onNavigate"
+            defaultTransitionNameDetail="slide"
+            defaultTransitionNameMaster="slide"
+            masterButtonTooltip="{i18n>help.master.button.tooltip}"
+            />
+</View>

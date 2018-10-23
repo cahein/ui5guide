@@ -1,0 +1,20 @@
+{
+  "name": "oum",
+  "version": "1.0.0",
+  "private": true,
+  "description": "UI5 User Manual - Example",
+  "author": "Carsten Heinrigs",
+  "devDependencies": {
+    "grunt": "1.0.3",
+    "grunt-available-tasks": "0.6.3",
+    "grunt-contrib-clean": "2.0.0",
+    "grunt-contrib-compress": "1.4.3",
+    "grunt-contrib-copy": "1.0.0",
+    "grunt-contrib-uglify-es": "3.3.0",
+    "grunt-eslint": "21.0.0",
+    "grunt-jsdoc": "2.3.0",
+    "grunt-openui5": "0.15.0"
+  },
+  "dependencies": {},
+  "optionalDependencies": {}
+}

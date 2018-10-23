@@ -1,0 +1,32 @@
+{
+   "componentId": "oumComponent",
+   "availableLanguages": [ "en", "de" ],
+   "defaultLanguage": "en",
+   "logLevel": "DEBUG",
+   "entryPoints": [
+      {
+         "header": "Navigate Orders",
+         "footer": "App",
+         "tooltip": "Explore routes and handlers",
+         "icon": "sap-icon://example",
+         "iconText": "Icon for example",
+         "routeName" : "order"
+      },
+      {
+         "header" : "SplitApp Navigation",
+         "footer" : "SplitApp",
+         "tooltip" : "Explore SplitApp master and detail navigation",
+         "icon" : "sap-icon://example",
+         "iconText": "Icon for example",
+         "routeName" : "split"
+      },
+      {
+         "header" : "{i18n>tiles.help.header}",
+         "footer" : "{i18n>tiles.help.footer}",
+         "tooltip" : "{i18n>help.tooltip}",
+         "icon" : "sap-icon://sys-help",
+         "iconText": "Icon for help",
+         "routeName" : "help"
+      }
+   ]
+}

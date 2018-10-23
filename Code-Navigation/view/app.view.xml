@@ -1,0 +1,8 @@
+<View xmlns="sap.m"
+      controllerName="oum.controller.app"
+      displayBlock="true">
+  <App id="oumApp"
+       navigate="onNavigate"
+       defaultTransitionName="slide"
+       />
+</View>

@@ -1,0 +1,5 @@
+{
+   "logLevel": "INFO",
+   "environment": "testing",
+   "mappingDirectory": "../domainObjects/mapping"
+}

@@ -1,0 +1,22 @@
+{
+    "description": "Define Status",
+    "primaryKey" : "status",
+    "entity" : [
+        {
+            "name": "status"
+        },
+        {
+            "name": "valueState"
+        }
+    ],
+    "request": {
+        "defaults": {
+            "protocol": "http",
+            "host": "localhost:3000"
+        },
+        "getStatuses": {
+            "pathname": "getStatuses",
+            "method": "GET"
+        }
+    }
+}

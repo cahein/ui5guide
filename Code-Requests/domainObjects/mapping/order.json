@@ -1,0 +1,116 @@
+{
+   "description": "Define Order",
+   "primaryKey" : "id",
+   "entity" : [
+      {
+         "name": "id",
+         "type": "int"
+      },
+      {
+         "name": "status",
+         "default": "new",
+         "referenceTo": "status.status"
+      },
+      {
+         "name": "orderDate",
+         "type": "Date",
+         "dateFormat": "yyyy-MM-dd HH:mm:ss",
+         "required": true
+      },
+      {
+         "name": "customerAddressId",
+         "referenceTo": "address.id"
+      },
+      {
+         "name": "billingAddressId",
+         "referenceTo": "address.id"
+      },
+      {
+         "name": "currency"
+      },
+      {
+         "name": "items",
+         "type": "collection",
+         "collectionItem": [
+            {
+               "name": "productId",
+               "referenceTo": "product.id",
+               "required": true
+            },
+            {
+               "name": "quantity",
+               "type": "int",
+               "required": true
+            },
+            {
+               "name": "unitPrice",
+               "type": "float",
+               "required": true
+            }
+         ]
+      },
+      {
+         "name": "payments",
+         "type": "collection",
+         "collectionProperties": [
+            {
+               "name": "date",
+               "type": "Date"
+            },
+            {
+               "name": "method"
+            },
+            {
+               "name": "amount",
+               "type": "float"
+            }
+         ]
+      }
+   ],
+   "request": {
+      "defaults": {
+         "protocol": "http",
+         "host": "localhost:3000"
+      },
+      "getOrders": {
+         "pathname": "getOrders",
+         "method": "GET",
+         "parameters": [
+            {
+               "name": "startDate",
+               "type": "Date",
+               "dateFormat": "yyyyMMddHHmmss",
+               "required": true
+            },
+            {
+               "name": "endDate",
+               "type": "Date",
+               "dateFormat": "yyyyMMddHHmmss"
+            },
+            {
+               "name": "statuses"
+            }
+         ]
+      },
+      "getOrder": {
+         "pathname": "getOrder",
+         "method": "GET",
+         "parameters": [
+            {
+               "name": "id",
+               "required": true
+            }
+         ]
+      },
+      "saveOrder": {
+         "pathname": "saveOrders",
+         "method": "POST",
+         "parameters": [
+            {
+               "name": "orderString",
+               "required": true
+            }
+         ]
+      }
+   }
+}

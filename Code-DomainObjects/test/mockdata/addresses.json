@@ -1,0 +1,29 @@
+{
+   "result": true,
+   "value": [
+      {
+         "id": 1,
+         "firstname": "Donald",
+         "lastname": "Knuth",
+         "street": "Algo Str. 1",
+         "city": "Mathtown 0",
+         "postcode": "123"
+      },
+      {
+         "id": 2,
+         "firstname": "Edward",
+         "lastname": "Snowden",
+         "street": "Uliza Nonsa",
+         "city": "Moscow",
+         "postcode": "001"
+      },
+      {
+         "id": 3,
+         "firstname": "No Privacy",
+         "lastname": "Here",
+         "street": "Mac Goo Str. 10",
+         "city": "Fakebook",
+         "postcode": "-1"
+      }
+   ]
+}

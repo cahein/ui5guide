@@ -1,0 +1,32 @@
+{
+   "componentId": "oumComponent",
+   "availableLanguages": [ "en", "de" ],
+   "defaultLanguage": "en",
+   "logLevel": "DEBUG",
+   "entryPoints": [
+      {
+         "header" : "Message Examples",
+         "footer" : "Messages",
+         "tooltip" : "",
+         "icon" : "sap-icon://example",
+         "iconText" : "",
+         "routeName" : "msgsExample"
+      },
+      {
+         "header" : "Event Examples",
+         "footer" : "Events",
+         "tooltip" : "",
+         "icon" : "sap-icon://example",
+         "iconText" : "",
+         "routeName" : "eventsExample"
+      },
+      {
+         "header" : "{i18n>tiles.help.header}",
+         "footer" : "{i18n>tiles.help.footer}",
+         "tooltip" : "{i18n>help.tooltip}",
+         "icon" : "sap-icon://sys-help",
+         "iconText" : "",
+         "routeName" : "help"
+      }
+   ]
+}

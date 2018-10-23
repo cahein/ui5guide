@@ -1,0 +1,48 @@
+{
+   "start_url": "index.html",
+   "sap.app": {
+      "id": "ui5manual-multi",
+      "type": "component",
+      "title": "{{ui5manual.title.multi}}",
+      "applicationVersion": {
+         "version": "0.1"
+      }
+   },
+   "sap.ui": {
+      "deviceTypes": {
+	 "desktop": true,
+	 "tablet": true,
+	 "phone": false
+      },
+      "supportedThemes": [
+         "sap_belize",
+         "sap_hcb"
+      ]
+   },
+   "sap.ui5": {
+      "contentDensities": {
+         "compact": true,
+         "cozy": true
+      },
+      "dependencies": {
+         "libs": {
+         },
+         "components" : {
+         }
+      },
+      "routing" : {
+         "config" : {
+            "async": true,
+            "viewType": "JS",
+            "viewPath": "uum.view"
+         },
+         "routes": [
+            {
+               "pattern": "address/:id:",
+               "name": "editAddress",
+               "target": "address"
+            }
+         ]
+      }
+   }
+}
