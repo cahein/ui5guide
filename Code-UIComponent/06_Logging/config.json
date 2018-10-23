@@ -1,0 +1,6 @@
+{
+   "componentId": "oumComponent",
+   "availableLanguages": [ "en", "de" ],
+   "defaultLanguage": "en",
+   "logLevel": "DEBUG"
+}

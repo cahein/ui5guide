@@ -1,0 +1,16 @@
+{
+   "componentId": "oumComponent",
+   "availableLanguages": [ "en", "de" ],
+   "defaultLanguage": "en",
+   "logLevel": "DEBUG",
+   "entryPoints": [
+      {
+         "header" : "{i18n>tiles.help.header}",
+         "footer" : "{i18n>tiles.help.footer}",
+         "tooltip" : "{i18n>tiles.help.tooltip}",
+         "icon" : "sap-icon://sys-help",
+         "iconText" : "{i18n>tiles.help.iconText}",
+         "routeName" : "help"
+      }
+   ]
+}

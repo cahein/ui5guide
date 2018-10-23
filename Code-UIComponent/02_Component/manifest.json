@@ -1,0 +1,35 @@
+{
+    "start_url": "index.html",
+    "sap.app": {
+        "id": "ui5manual",
+        "type": "application",
+        "title": "{{ui5manual.title}}",
+        "applicationVersion": {
+            "version": "0.1"
+        }
+    },
+    "sap.ui": {
+	"deviceTypes": {
+	    "desktop": true,
+	    "tablet": true,
+	    "phone": false
+	},
+        "supportedThemes": [
+            "sap_belize",
+            "sap_hcb"
+        ]
+    },
+    "sap.ui5": {
+        "minUI5Version": "1.38.37",
+        "contentDensities": {
+            "compact": true,
+            "cozy": true
+        },
+        "dependencies": {
+            "libs": {
+            },
+            "components": {
+            }
+        }
+    }
+}
