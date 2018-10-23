@@ -9,6 +9,7 @@ jasmine
 Code-Devel/build
 Code-Devel/dist
 Code-Devel/doc
+packages-lock.json
 node_modules
 build
 dist
