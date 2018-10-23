@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<core:FragmentDefinition
+    xmlns="sap.m"
+    xmlns:core="sap.ui.core">
+  
+  <SelectDialog
+      title="{i18n>address.find}"
+      search="queryAddresses"
+      confirm="handleAddressSelected"
+      items="{/}"
+      >
+    
+    <StandardListItem
+        title="{lastname}, {firstname}"
+        description="{city}, {postcode}"
+        />
+  </SelectDialog>
+</core:FragmentDefinition>

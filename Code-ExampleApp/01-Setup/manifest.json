@@ -1,0 +1,132 @@
+{
+   "start_url": "index.html",
+   "sap.app": {
+      "id": "orderAppExample",
+      "type": "application",
+      "title": "{{oum.example.orderApp}}",
+      "applicationVersion": {
+         "version": "1.0.0"
+      }
+   },
+   "sap.ui": {
+      "deviceTypes": {
+         "desktop": true,
+         "tablet": true,
+         "phone": false
+      },
+      "supportedThemes": [
+         "sap_belize",
+         "sap_belize_hcb",
+         "sap_belize_hcw"
+      ]
+   },
+   "sap.ui5": {
+      "contentDensities": {
+         "compact": true,
+         "cozy": true
+      },
+      "dependencies": {
+         "minUI5Version": "1.38.33",
+         "libs": {
+         },
+         "components" : {
+         }
+      },
+      "routing" : {
+         "config" : {
+            "routerClass": "oum.Router",
+            "async": true,
+            "viewType": "JS",
+            "viewPath": "oum.view",
+            "controlId": "oumApp",
+            "controlAggregation": "pages",
+            "bypassed": {
+               "target": "noRoute"
+            }
+         },
+         "routes": [
+            {
+               "pattern": "",
+               "name": "home",
+               "target": "home"
+            },
+            {
+               "pattern": "orders",
+               "name": "ordersList",
+               "target": "ordersList"
+            },
+            {
+               "pattern": "order/:id:",
+               "name": "order",
+               "target": ["orderOverview", "orderNav"]
+            },
+            {
+               "pattern": "order/{id}/address/{type}",
+               "name": "orderAddress",
+               "target": ["orderAddress", "orderNav"]
+            },
+            {
+               "pattern": "help",
+               "name": "help",
+               "target": ["helpIndex", "helpIntro"]
+            },
+            {
+               "pattern": "pageNotFound",
+               "name": "noRoute",
+               "target": "noRoute"
+            }
+         ],
+         "targets": {
+            "app": {
+               "viewName": "app",
+               "viewType": "XML"
+            },
+            "home": {
+               "viewName": "entry"
+            },
+            "splitApp": {
+               "viewName": "splitApp",
+               "viewType": "XML"
+            },
+            "ordersList": {
+               "viewName": "orders"
+            },
+            "orderNav": {
+               "parent": "splitApp",
+               "viewName": "orderNavigation",
+               "controlId": "oumSplitApp",
+               "controlAggregation": "masterPages"
+            },
+            "orderOverview": {
+               "parent": "splitApp",
+               "viewName": "order",
+               "controlId": "oumSplitApp",
+               "controlAggregation": "detailPages"
+            },
+            "orderAddress": {
+               "parent": "splitApp",
+               "viewName": "orderAddress",
+               "controlId": "oumSplitApp",
+               "controlAggregation": "detailPages"
+            },
+            "helpIndex": {
+               "parent": "splitApp",
+               "viewName": "help.index",
+               "controlId": "oumSplitApp",
+               "controlAggregation": "masterPages"
+            },
+            "helpIntro": {
+               "parent": "splitApp",
+               "viewName": "help.intro",
+               "controlId": "oumSplitApp",
+               "controlAggregation": "detailPages"
+            },
+            "noRoute": {
+               "viewPath": "oui5lib.view",
+               "viewName": "noRoute",
+               "viewType": "XML"
+            }
+         }
+      }
+   }
+}

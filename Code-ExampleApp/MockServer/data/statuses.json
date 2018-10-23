@@ -1,0 +1,45 @@
+{
+    "result": true,
+    "value": [
+        {
+            "status": "new",
+            "valueState": "None"
+        },
+        {
+            "status": "pending",
+            "valueState": "None"
+        },
+        {
+            "status": "processing",
+            "valueState": "Warning"
+        },
+        {
+            "status": "holded",
+            "valueState": "None"
+        },
+        {
+            "status": "invoiced",
+            "valueState": "Warning"
+        },
+        {
+            "status": "payment_overdue",
+            "valueState": "Error"
+        },
+        {
+            "status": "canceled",
+            "valueState": "None"
+        },
+        {
+            "status": "shipped",
+            "valueState": "Success"
+        },
+        {
+            "status": "completed",
+            "valueState": "Success"
+        },
+        {
+            "status": "closed",
+            "valueState": "None"
+        }
+    ]
+}

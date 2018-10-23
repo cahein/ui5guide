@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<core:FragmentDefinition
+    xmlns="sap.m"
+    xmlns:core="sap.ui.core">
+  
+  <SelectDialog
+      title="{i18n>product.find}"
+      confirm="handleProductSelected"
+      search="queryProducts"
+      items="{/}"
+      >
+    
+    <StandardListItem
+        title="{isbn}: {author}"
+        description="{title/a}{title/b}"
+        />
+  </SelectDialog>
+</core:FragmentDefinition>

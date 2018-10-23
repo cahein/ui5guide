@@ -1,0 +1,21 @@
+{
+    "result": true,
+    "value": [
+       {
+          "code": "DE",
+          "country": "Germany"
+       },{
+          "code": "US",
+          "country": "United States"
+       },{
+          "code": "IN",
+          "country": "India"
+       },{
+          "code": "CN",
+          "country": "China"
+       },{
+          "code": "ES",
+          "country": "Espania"
+       }
+    ]
+}

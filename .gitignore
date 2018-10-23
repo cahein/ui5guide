@@ -1,0 +1,16 @@
+*~
+*#
+.#*
+.tern-port
+resources
+saved
+assets
+jasmine
+Code-Devel/build
+Code-Devel/dist
+Code-Devel/doc
+node_modules
+build
+dist
+
+
