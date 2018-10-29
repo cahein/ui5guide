@@ -1,0 +1,28 @@
+{
+    "entryPoints": [
+        {
+            "header" : "{i18n>tiles.orders.header}",
+            "footer" : "{i18n>tiles.orders.footer}",
+            "tooltip" : "{i18n>orders.tooltip}",
+            "icon" : "sap-icon://my-sales-order",
+            "iconText" : "{i18n>tiles.orders.iconText}",
+            "routeName" : "ordersList"
+        },
+        {
+            "header" : "{i18n>tiles.order.header}",
+            "footer" : "{i18n>tiles.order.footer}",
+            "tooltip" : "{i18n>order.tooltip}",
+            "icon" : "sap-icon://my-sales-order",
+            "iconText" : "{i18n>tiles.order.iconText}",
+            "routeName" : "order"
+        },
+        {
+            "header" : "{i18n>tiles.help.header}",
+            "footer" : "{i18n>tiles.help.footer}",
+            "tooltip" : "{i18n>help.tooltip}",
+            "icon" : "sap-icon://sys-help",
+            "iconText" : "{i18n>tiles.help.iconText}",
+            "routeName" : "help"
+        }
+    ]
+}
