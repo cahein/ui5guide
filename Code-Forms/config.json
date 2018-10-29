@@ -21,7 +21,7 @@
       {
          "header" : "{i18n>tiles.help.header}",
          "footer" : "{i18n>tiles.help.footer}",
-         "tooltip" : "{i18n>help.tooltip}",
+         "tooltip" : "{i18n>tiles.help.tooltip}",
          "icon" : "sap-icon://sys-help",
          "routeName" : "help"
       }
