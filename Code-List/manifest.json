@@ -1,9 +1,9 @@
 {
     "start_url": "index.html",
     "sap.app": {
-        "id": "openui5manual",
+        "id": "ui5manual",
         "type": "application",
-        "title": "{{openui5manual.title}}",
+        "title": "{{ui5manual.title}}",
         "applicationVersion": {
             "version": "0.1"
         }
