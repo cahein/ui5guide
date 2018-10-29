@@ -120,7 +120,7 @@ sap.ui.define([
       handleLineQuantityChanged: function(oEvent) {
          const input = oEvent.getSource();
          const lineData = this.getLineData(input);
-         this.getEditedOrder().updateOrderLineQuantity(lineData.productId,
+         this.getEditedOrder().changeOrderLineQuantity(lineData.productId,
                                                        lineData.quantity);
          this.handleOrderChanged();
       },

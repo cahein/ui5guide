@@ -164,7 +164,7 @@
    Order.prototype.getOrderLines = getOrderLines;
    Order.prototype.addOrderLine = addOrderLine;
    Order.prototype.removeOrderLine = removeOrderLine;
-   Order.prototype.changeOrderItemQuantity = updateOrderLineQuantity;
+   Order.prototype.changeOrderLineQuantity = updateOrderLineQuantity;
    
    Order.prototype.getOrderLine = getOrderLine;
    Order.prototype.setOrderTotal = setOrderTotal;

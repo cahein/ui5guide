@@ -104,7 +104,7 @@ describe("Order entity object", function() {
       expect(orderLine.lineTotal).toEqual("9.60");
       expect(order.getProperty("total")).toEqual("29.50");
 
-      const success = order.changeOrderItemQuantity("0394718747", "1");
+      const success = order.changeOrderLineQuantity("0394718747", "1");
       expect(success).toBe(true);
 
       expect(orderLine.quantity).toEqual(1);
