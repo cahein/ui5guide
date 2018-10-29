@@ -10,6 +10,9 @@ sap.ui.define([
         titleMainAction: function(oEvent) {
             alert("say hello");
         },
+        closeAction: function(oEvent) {
+            this.getRouter().vNavTo("home");
+        },
         addAction: function(oEvent) {
             alert("Add");
         }

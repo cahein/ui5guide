@@ -20,6 +20,7 @@ sap.ui.define([
       },
       coreEventHandler: function(channel, event, data) {
          oui5lib.logger.debug("core event: " + channel + ":" + event);
+         sap.m.MessageToast.show("Core event received: " + channel + ":" + event);
          console.log(data);
       },
       publishComponentEvent: function() {
@@ -29,6 +30,7 @@ sap.ui.define([
       },
       componentEventHandler: function(channel, event, data) {
          oui5lib.logger.debug("component event: " + channel + ":" + event); 
+         sap.m.MessageToast.show("Component event received: " + channel + ":" + event);
          console.log(data);
       },
       backHome: function() {

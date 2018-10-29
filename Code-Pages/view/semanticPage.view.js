@@ -29,7 +29,11 @@ sap.ui.jsview("oum.view.semanticPage", {
                level: "H2",  titleStyle: "H3"
             })
          ],
-         closeAction: new sap.f.semantic.CloseAction(),
+         closeAction: new sap.f.semantic.CloseAction({
+            press: function(oEvent) {
+               oController.closeAction(oEvent);
+            }
+         }),
          fullScreenAction: new sap.f.semantic.FullScreenAction(),
          exitFullScreenAction: new sap.f.semantic.ExitFullScreenAction(),
 
