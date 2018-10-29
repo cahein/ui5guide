@@ -15,7 +15,7 @@ class OrderAppMockServer < Sinatra::Base
   set :root, File.dirname(__FILE__)
   @@dataPath = "#{root}/data/"
 
-  set :titel, "UI5 User Manual: Example Application MockServer"
+  set :titel, "UI5 User Guide: Example Application MockServer"
   set :environment, "development"
   set :port, 3000
 

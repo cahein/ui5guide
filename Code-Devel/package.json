@@ -2,7 +2,7 @@
   "name": "oum",
   "version": "1.0.0",
   "private": true,
-  "description": "UI5 User Manual - Example",
+  "description": "UI5 User Guide - Example",
   "author": "Carsten Heinrigs",
   "devDependencies": {
     "grunt": "1.0.3",
