@@ -93,11 +93,6 @@ sap.ui.jsview("oum.view.objectPage", {
       
       const firstPageSection = new sap.uxap.ObjectPageSection({
          title: "ObjectPageSection 1 title",
-         content: [
-            new sap.m.Text({
-               text: "section 1 content"
-            })
-         ],
          subSections: [
             new sap.uxap.ObjectPageSubSection({
                title: "ObjectPageSubSection 1.1",
@@ -137,11 +132,6 @@ sap.ui.jsview("oum.view.objectPage", {
       });
       const secondPageSection = new sap.uxap.ObjectPageSection({
          title: "ObjectPageSection 2 title",
-         content: [
-            new sap.m.Text({
-               text: "section 2 content"
-            })
-         ],
          subSections: [
             new sap.uxap.ObjectPageSubSection({
                title: "ObjectPageSubSection 2.1",

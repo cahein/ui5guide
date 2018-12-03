@@ -142,7 +142,7 @@ sap.ui.jsview("oum.view.tableExample", {
                textAlign: "End"
             }),
             new sap.m.Text({
-               value: "{orderDateStr}"
+               text: "{orderDateStr}"
             }),
             new sap.m.Text({
                text: "{payDateStr}"

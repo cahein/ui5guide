@@ -5,7 +5,6 @@ sap.ui.jsview("oum.view.toolPage", {
    
    createContent : function(oController) {
       const toolHeader = new sap.tnt.ToolHeader({
-         sideExpanded: true,
          content: [
             new sap.m.Button({
                icon: "sap-icon://menu2",
